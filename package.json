@@ -1,0 +1,41 @@
+{
+  "name": "api-graveyard",
+  "version": "0.1.0",
+  "description": "Official Node.js collector for API Graveyard — automatically tracks your outgoing HTTP dependencies",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "jest",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "api",
+    "monitoring",
+    "dependency",
+    "tracking",
+    "http",
+    "observability"
+  ],
+  "author": "API Graveyard",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shakargy/api-graveyard-node"
+  },
+  "homepage": "https://api-graveyard.com",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0",
+    "jest": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "ts-jest": "^29.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
