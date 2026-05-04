@@ -5,7 +5,7 @@ Official Node.js collector for [API Graveyard](https://api-graveyard.com) — au
 ## Install
 
 ```bash
-npm install api-graveyard
+npm install @api-graveyard/node
 ```
 
 ## Quick start
@@ -13,7 +13,7 @@ npm install api-graveyard
 Add one line to the top of your app entry point:
 
 ```js
-const apiGraveyard = require('api-graveyard');
+const apiGraveyard = require('@api-graveyard/node');
 
 apiGraveyard.init({
   apiKey: 'agk_your_key_here',
@@ -28,7 +28,7 @@ That's it. Every outgoing HTTP/HTTPS request your app makes is now automatically
 ## TypeScript
 
 ```ts
-import { init } from 'api-graveyard';
+import { init } from '@api-graveyard/node';
 
 init({
   apiKey: process.env.API_GRAVEYARD_KEY!,
@@ -56,7 +56,7 @@ init({
 If you only want to capture inbound requests to your own Express server (not outgoing calls):
 
 ```js
-const { middleware } = require('api-graveyard');
+const { middleware } = require('@api-graveyard/node');
 
 app.use(middleware({
   apiKey: 'agk_your_key_here',

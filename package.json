@@ -1,5 +1,5 @@
 {
-  "name": "api-graveyard",
+  "name": "@api-graveyard/node",
   "version": "0.1.0",
   "description": "Official Node.js collector for API Graveyard — automatically tracks your outgoing HTTP dependencies",
   "main": "dist/index.js",
